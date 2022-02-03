@@ -1,0 +1,111 @@
+div#head {
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    top: 0;
+    display: block;
+}
+
+div#innerHead {
+    padding-top: 90px;
+    max-width: 720px;
+    padding-bottom: 200px;
+    color: rgb(209, 209, 209);
+}
+
+img#avatar {
+    border-radius: 200px;
+    width: 50%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 7px solid rgb(235, 235, 235);
+}
+
+div#fol {
+    margin-top: 60px;
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+div#repo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#inrepo {
+    width: 90%;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+div#in {
+    margin: 5px;
+}
+
+div#mrow {
+    background-color: rgb(235, 235, 235);
+}
+
+div#ww {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+div#icontainer {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 41, 41);
+}
+
+div#form {
+    padding-top: 30vh;
+    text-align: center;
+}
+
+input#search:focus {
+    border: none;
+    outline: none;
+}
+
+input#search {
+    background-color: rgb(71, 71, 71);
+    border: none;
+    width: 17em;
+    height: 3em;
+    max-width: 340;
+    max-height: 60;
+    color: rgb( 191, 191, 191);
+}
+
+button {
+    background: none;
+    border: none;
+    margin-left: 20px;
+}
+
+img#img {
+    width: 59px;
+    padding-bottom: 6px;
+}
+
+h1#profile {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+@media only screen and (max-width: 600px) {
+    h1#profile {
+        font-size: 2em;
+    }
+    input#search {
+        width: 240px;
+        height: 40px;
+    }
+    img#img {
+        width: 39px;
+    }
+}

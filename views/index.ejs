@@ -1,0 +1,12 @@
+<%- include ('partials/header')  %>
+    <div id='icontainer' class="container-fluid">
+        <div id='form' class="form-group">
+            <h1 id="profile">Find Your GitHub Profile</h1>
+            <form action="/user" method="get">
+                <input id="search" type="text" class='form-control-lg' name="search">
+                <button><img src="/logo.png" id="img" alt=""></button>
+            </form>
+        </div>
+    </div>
+
+    <%- include ('partials/footer')  %>

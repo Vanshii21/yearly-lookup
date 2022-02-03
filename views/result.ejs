@@ -1,0 +1,68 @@
+<%- include ('partials/header')  %>
+    <div id="head" class="container-fluid">
+        <div id="innerHead" class="container">
+            <div class="media">
+                <img id='avatar' src="<%= user.avatar_url %> " alt=""></div>
+            <h1>
+                <%=user.name  %>
+            </h1>
+            <a href="<%=user.url %>">
+                <%= user.login %>
+            </a>
+            <div id='fol' class="container">
+                <div class='row'>
+                    <div class="col-sm-4">
+                        <p>follower:
+                            <%= user.followers %>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>folowoing:
+                            <%= user.following %>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Repositories:
+                            <%= user.public_repos %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id='mrow' class="container-fluid">
+        <div id="ww" class="container-xl">
+            <div id='row' class="row">
+                <% repo.forEach(function(rep){ %>
+
+                    <div id='repo' class='px-1 py-3 col-xl-3 col-lg-4 col-sm-6'>
+                        <div id='inrepo' class="mx-1 my-1">
+                            <div id="in">
+
+
+                                <h4>
+
+                                    <a href="<%=rep.html_url %>">
+                                        <%= rep.name %>
+                                    </a>
+                                </h4>
+                                <p>Language:
+                                    <%= rep.language %>
+                                </p>
+                                <p>
+                                    <%= rep.size %> kb </p>
+                                <p>Created at -
+                                    <%= rep.created_at.substring(0,10) %>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <% }) %>
+            </div>
+
+        </div>
+    </div>
+    <%- include ('partials/footer')  %>
